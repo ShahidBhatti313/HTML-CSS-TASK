@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Validation</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Enter your phone number (10 digits)">
+            <br>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="Enter your website (optional)">
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

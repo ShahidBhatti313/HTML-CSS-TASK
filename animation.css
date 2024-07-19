@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
